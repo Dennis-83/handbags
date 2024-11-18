@@ -1,14 +1,13 @@
 import React from "react";
 
-function Button(props) {
+function Button({label, disabled, onClick}) {
     // console.log(props);
     return (
         <button
-            disabled={props.disabled}
-            onClick={() => {
-                console.log(`${props.label}`);
-            }}
-        >{props.label}
+            onClick={() => onClick(label)}
+            disabled={disabled}
+        >
+            {label}
         </button>
     )
 }

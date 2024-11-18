@@ -8,14 +8,23 @@ function App() {
             <nav>
                 <Button
                     label="to the collection"
+                    onClick={(label) => {
+                        console.log( label );
+                    }}
                     disabled={false}
                 />
                 <Button
                     label="shop all bags"
+                    onClick={(label) => {
+                        console.log( label );
+                    }}
                     disabled={false}
                 />
                 <Button
                     label="pre-orders"
+                    onClick={(label) => {
+                        console.log( label );
+                    }}
                     disabled={true}
                 />
             </nav>
