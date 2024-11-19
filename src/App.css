@@ -1,6 +1,5 @@
 body {
-    background-color: dimgrey; /*added backgroundcolor for darkmode */
-
+    /*background-color: dimgrey; !*added backgroundcolor for darkmode *!*/
 }
 main {
     margin: 24px 0;
@@ -21,7 +20,7 @@ footer {
 section {
 
     background-color: #F6F3EF; /*original backgroundcolor*/
-    background-color: dimgrey; /*added backgroundcolor for darkmode */
+    /*background-color: dimgrey; !*added backgroundcolor for darkmode *!*/
     font-size: 10px;
     height: 400px;
     overflow: hidden;
