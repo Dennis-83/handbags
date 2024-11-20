@@ -4,7 +4,7 @@ function Product({redLabel, image, productTitle, price}) {
             <span>{redLabel}</span>
             <img src={image} alt={productTitle}/>
             <p>{productTitle}</p>
-            <h4>{price}</h4>
+            <h4>€{price},-</h4>
         </article>
     )
 }

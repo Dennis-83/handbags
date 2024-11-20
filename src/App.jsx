@@ -41,25 +41,25 @@ function App() {
                     redLabel="Best seller"
                     image="../src/assets/bag_1.png"
                     productTitle="The handy bag"
-                    price="€400,-"
+                    price={400}
                 />
                 <Product
                     redLabel="Best seller"
                     image="../src/assets/bag_2.png"
                     productTitle="The stylish bag"
-                    price="€250,-"
+                    price={250}
                 />
                 <Product
                     redLabel="New collection"
                     image="../src/assets/bag_3.png"
                     productTitle="The simple bag"
-                    price="€300,-"
+                    price={300}
                 />
                 <Product
                     redLabel="New collection"
                     image="../src/assets/bag_4.png"
                     productTitle="The trendy bag"
-                    price="€150,-"
+                    price={150}
                 />
             </main>
             <footer>
