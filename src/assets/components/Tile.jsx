@@ -1,4 +1,4 @@
-function Tile({title, tileText, image, alt}) {
+function Tile({title, image, alt, children}) {
 
     // Korte versie
     return (
@@ -8,10 +8,7 @@ function Tile({title, tileText, image, alt}) {
             ) : (
                 <>
                     <h2>{title}</h2>
-                    {/*Meerdere paragrafen kunnen zo worden toegevoegd(of een enkele, mits in een array*/}
-                    {tileText.map((paragraph) => (
-                        <p>{paragraph}</p>
-                    ))}
+                    {children}
                 </>
             )}
         </section>
@@ -28,12 +25,11 @@ function Tile({title, tileText, image, alt}) {
     //     return (
     //         <section>
     //             <h2>{title}</h2>
-    //             {tileText.map((paragraph) => (
-    //                 <p>{paragraph}</p>
-    //             ))}
+    //             {children}
     //         </section>
     //     )
     // }
+
 }
 
 export default Tile;

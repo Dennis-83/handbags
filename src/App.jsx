@@ -4,11 +4,6 @@ import Product from "./assets/components/Product.jsx";
 import Tile from "./assets/components/Tile.jsx";
 
 function App() {
-    // Tekst voor de paragrafen altijd in een array ivm .map methode in Tile component,
-    // ook bij een enkele paragraaf. (evt op te lossen door strings naar array te converteren, dan kan enkele paragraaf ook in een string)
-    const singleParagraph =["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias aut cumque ea hic impedit, laboriosam nostrum odio perferendis porro temporibus ut voluptatum. Accusamus deserunt dolor dolore dolorum enim eum ex exercitationem expedita illum ipsum nostrum quae quis rem, totam unde ut, veritatis. Doloremque eius magni similique suscipit veritatis voluptatem."]
-    const multipleParagraphs = ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque et inventore nesciunt saepe suscipit. Accusantium eveniet incidunt nisi omnis possimus quisquam sequi ullam unde voluptatum!", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores consectetur cum eius in ipsum molestias, nihil pariatur possimus quis recusandae vero voluptate, voluptates voluptatibus?"]
-
 
     return (
         <>
@@ -63,10 +58,11 @@ function App() {
                 />
             </main>
             <footer>
-                <Tile
-                    title="The Brand"
-                    tileText={multipleParagraphs}
-                />
+                <Tile title="The Brand" >
+                    {/*2x een lorem25 gebruikt*/}
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto culpa dicta dignissimos eveniet inventore ipsam, libero recusandae soluta veniam voluptatum. Eius iure libero molestias non?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis enim eveniet exercitationem, facilis, ipsa itaque labore libero nam odio optio, quod sint velit veritatis voluptatem?</p>
+                </Tile>
                 <Tile
                     image="../src/assets/brand.png"
                     alt="brand"
@@ -75,10 +71,10 @@ function App() {
                     image="../src/assets/our_story.png"
                     alt="our story"
                 />
-                <Tile
-                    title="Our Story"
-                    tileText={singleParagraph}
-                />
+                <Tile title="Our Story" >
+                    {/*1x een lorem50 gebruikt*/}
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque nostrum odio optio repellat. Asperiores consequuntur eligendi iure laboriosam totam. Accusantium aut deleniti dolorem, provident quia sapiente! Architecto atque blanditiis dignissimos earum est eum explicabo harum illo maxime mollitia nobis odit perferendis quibusdam quis sint, tempore ullam vitae voluptas voluptates.</p>
+                </Tile>
             </footer>
         </>
     )
