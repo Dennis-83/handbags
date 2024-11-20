@@ -1,5 +1,3 @@
-import React from "react";
-
 function Button({label, disabled, onClick}) {
     // console.log(props);
     return (

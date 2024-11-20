@@ -1,5 +1,3 @@
-import React from "react";
-
 function Tile({title, tileText, image, alt}) {
 
     // Korte versie

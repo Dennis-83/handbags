@@ -1,5 +1,3 @@
-import React from "react";
-
 function Product({redLabel, image, productTitle, price}) {
     return (
         <article>
